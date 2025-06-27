@@ -15,6 +15,7 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 
@@ -170,8 +171,7 @@ main(int argc, char *argv[])
     /* dump the tone sequence */
     for (i=0; i<162; i += 18) {
 	for (j=0; j<18; j++) {
-	    printf("%d", msg[i+j]) ;
-	    if (j < 17) printf(" ") ;
+	    printf("%d, ", msg[i+j]) ;
 	}
 	printf("\n") ;
     }
